@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: url("https://img2.pngio.com/the-best-graphic-designs-of-mountains-for-download-with-images-mountain-laptop-wallpaper-png-1920_960.png") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+nav {
+    font-family: montserrat;
+    background: white;
+    height: 80px;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    text-transform: uppercase;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #686868;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+}
+
+a.active, a:hover {
+    background: none;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+    float: right;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 850px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #484848;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
